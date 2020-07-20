@@ -10,7 +10,7 @@ Project is created with:
 * Typescript : 3.8.5
 	
 ## Setup
-To run this project, install it locally using npm:
+To run this project, install it locally using npm, install all the dependencies, node module is not commited here:
 
 ```
 $ cd ../candidate-workbook
