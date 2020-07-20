@@ -1,0 +1,42 @@
+.srchbx{
+  position:relative;
+  left: 420px;
+  margin-top: 10px;
+}
+.srchin{
+  outline: 0;
+  border-width: 0 0 2px;
+}
+.btnsrch{
+  border-radius: 50%;
+  padding: 0px;
+  background-color: #993399;
+}
+.mcard{
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.mcarddata{
+  height:150px;
+  width: 250px;
+  float:left;
+  border-style: solid;
+  border-width: medium;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.name{
+  margin-bottom:1px;
+}
+
+.btnsel{
+  margin-right: 3px;
+}
+
+.btnsel1{
+  background-color: #993399;
+}
+
+.btnreject{
+  background-color: rgb(204, 24, 24);
+}
