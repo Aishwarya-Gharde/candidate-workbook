@@ -1,0 +1,32 @@
+.popup{
+  border-style:groove;
+  height: 350px;
+  width: 350px,
+
+}
+.title{
+  text-align: center;
+
+}
+.frm{
+  margin-top: 15px;
+}
+.city{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btnadd{
+  margin-top: 20px;
+}
+
+.chkbox{
+  margin-top:15px;
+
+}
+
+.mchkbox{
+  margin-left: 10px;
+}
+
+

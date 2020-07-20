@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<div class="row">
+<div class= "col-4" style="position:relative; left: 420px; margin-top: 10px;" >
+   <div *ngIf = '!addUserPage'>
+    <input class="form-control" type="text" style="outline: 0;border-width: 0 0 2px;" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="Seach Candidate">
+    <button style="border-radius: 50%;padding: 0px;" title="Add Candidate"  (click)="onAddUser()">
+      <i class="material-icons">add</i>
+    </button>
+   </div>
+
+</div>
+<div class="col-4">
+  <span *ngIf = 'addUserPage'> <app-add-candidate></app-add-candidate></span>
+</div>
+
+<div class="col-4" style="margin-top: 30px; margin-left: 30px;" *ngIf = '!addUserPage'>
+<mat-card *ngFor="let user of users | async | filter:searchText" style="height:150px;width: 250px;float:left;  border-style: solid;
+border-width: medium; margin-bottom: 20px;margin-left: 10px;">
+<span style="margin-bottom:1px;">{{user.name}}  ({{user.gender}})</span><br>
+<span>{{user.state}}</span><br>
+ <span>{{user.status}}</span> <br>
+ <span>{{user.skills}}</span><br><br>
+ <span style="margin-right: 3px;"><button style="background-color: rgb(136, 17, 136)">Select</button></span>
+ <span><button style="background-color: rgb(204, 24, 24);">Reject</button></span>
+
+</mat-card>
+</div>
+</div>
+</body>
+
+
